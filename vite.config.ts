@@ -8,6 +8,7 @@ import svgr from 'vite-plugin-svgr';
 import checker from 'vite-plugin-checker';
 import { flatRoutes } from 'remix-flat-routes';
 import { remixDevTools } from 'remix-development-tools';
+import { vercelPreset } from '@vercel/remix/vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -23,6 +24,7 @@ export default defineConfig({
         routes: async defineRoutes => {
           return flatRoutes('routes', defineRoutes);
         },
+        presets: [vercelPreset()],
       }),
     svgr(),
     checker({ typescript: true }),
