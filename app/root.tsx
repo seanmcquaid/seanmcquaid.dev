@@ -24,6 +24,7 @@ import useAppTranslation from './hooks/useAppTranslation';
 import LoadingOverlay from './components/ui/LoadingOverlay';
 import i18next from './i18n/i18next.server';
 import setAcceptLanguageHeaders from './i18n/setAcceptLanguageHeaders';
+import Navbar from './components/app/Navbar';
 
 export async function loader({ request }: LoaderFunctionArgs) {
   setAcceptLanguageHeaders(request);
@@ -100,6 +101,7 @@ const Root = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <LoadingOverlay isLoading={isLoadingPage} />
+      <Navbar />
       <Outlet />
       <ReactQueryDevtools initialIsOpen={false} buttonPosition="top-right" />
       <Toaster />
