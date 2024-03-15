@@ -12,6 +12,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '../ui/DropdownMenu';
+import { MenuIcon } from 'lucide-react';
 
 interface Route {
   to: string;
@@ -41,7 +42,9 @@ const Navbar = () => {
         ))}
         <NavigationMenuItem className="md:hidden">
           <DropdownMenu>
-            <DropdownMenuTrigger>Open</DropdownMenuTrigger>
+            <DropdownMenuTrigger>
+              <MenuIcon />
+            </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuLabel>My Account</DropdownMenuLabel>
               <DropdownMenuSeparator />
