@@ -1,3 +1,4 @@
+import { MenuIcon } from 'lucide-react';
 import {
   NavigationMenu,
   NavigationMenuList,
@@ -8,11 +9,8 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '../ui/DropdownMenu';
-import { MenuIcon } from 'lucide-react';
+} from '@/components/ui/DropdownMenu';
 
 interface Route {
   to: string;
@@ -30,28 +28,35 @@ const routes: Route[] = [
 
 const Navbar = () => {
   return (
-    <NavigationMenu>
-      <NavigationMenuList>
+    <NavigationMenu className="w-full max-w-full *:w-full p-4">
+      <NavigationMenuList className="flex w-full justify-between items-center">
         <NavigationMenuItem>
           <NavigationMenuLink to="/">{'Sean McQuaid'}</NavigationMenuLink>
         </NavigationMenuItem>
-        {routes.map(route => (
-          <NavigationMenuItem key={route.to} className="sm:hidden">
-            <NavigationMenuLink to={route.to}>{route.label}</NavigationMenuLink>
-          </NavigationMenuItem>
-        ))}
-        <NavigationMenuItem className="md:hidden">
+        <li>
+          <ul className="flex">
+            {routes.map(route => (
+              <NavigationMenuItem key={route.to} className="sm:hidden ml-8">
+                <NavigationMenuLink to={route.to}>
+                  {route.label}
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            ))}
+          </ul>
+        </li>
+        <NavigationMenuItem className="flex md:hidden">
           <DropdownMenu>
             <DropdownMenuTrigger>
               <MenuIcon />
             </DropdownMenuTrigger>
             <DropdownMenuContent>
-              <DropdownMenuLabel>My Account</DropdownMenuLabel>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem>Profile</DropdownMenuItem>
-              <DropdownMenuItem>Billing</DropdownMenuItem>
-              <DropdownMenuItem>Team</DropdownMenuItem>
-              <DropdownMenuItem>Subscription</DropdownMenuItem>
+              {routes.map(route => (
+                <DropdownMenuItem key={route.to}>
+                  <NavigationMenuLink to={route.to}>
+                    {route.label}
+                  </NavigationMenuLink>
+                </DropdownMenuItem>
+              ))}
             </DropdownMenuContent>
           </DropdownMenu>
         </NavigationMenuItem>
