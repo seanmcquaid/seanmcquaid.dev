@@ -119,8 +119,8 @@ devDependencies:
     specifier: ^2.8.1
     version: 2.8.1(@remix-run/serve@2.8.1)(@types/node@20.11.27)(typescript@5.4.2)(vite@5.1.6)
   '@size-limit/file':
-    specifier: ^11.1.0
-    version: 11.1.0(size-limit@11.1.0)
+    specifier: ^11.1.1
+    version: 11.1.1(size-limit@11.1.1)
   '@testing-library/jest-dom':
     specifier: ^6.4.2
     version: 6.4.2(vitest@1.3.1)
@@ -230,8 +230,8 @@ devDependencies:
     specifier: ^0.6.4
     version: 0.6.4(@remix-run/dev@2.8.1)
   size-limit:
-    specifier: ^11.1.0
-    version: 11.1.0
+    specifier: ^11.1.1
+    version: 11.1.1
   tailwindcss:
     specifier: ^3.4.1
     version: 3.4.1
@@ -2780,13 +2780,13 @@ packages:
     engines: {node: '>=18'}
     dev: true
 
-  /@size-limit/file@11.1.0(size-limit@11.1.0):
-    resolution: {integrity: sha512-C7Tr9dvw8Jx8If2xyGt0OprB+t03tAf259QJYi4WSl3IRMxH7l8k9qyITa/KCFcmH7tVBduNRSnHAL8Cf90EfQ==}
+  /@size-limit/file@11.1.1(size-limit@11.1.1):
+    resolution: {integrity: sha512-c4XXp2CLvfx2RfzAqIAlxV6OWAQSVquLMNKKD6x9urJD7knjnTesPkbMcf3SkQbjCY4PlLL6kYhaO9drCWGM6g==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
-      size-limit: 11.1.0
+      size-limit: 11.1.1
     dependencies:
-      size-limit: 11.1.0
+      size-limit: 11.1.1
     dev: true
 
   /@svgr/babel-plugin-add-jsx-attribute@8.0.0(@babel/core@7.23.6):
@@ -9550,8 +9550,8 @@ packages:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
 
-  /size-limit@11.1.0:
-    resolution: {integrity: sha512-HvqVEUDJ3y/XL69pR3vxTavPr6s4S9ScJhHjLEjpctF0Ymgo1StmHgFeQoyQYb/1ip7olkWxJG3wRcZk1hZcPg==}
+  /size-limit@11.1.1:
+    resolution: {integrity: sha512-0d06gwp+hBuhNQyAyewalfMLhGCnjt15MyDxqouzxN4+85vjAUdRKSNuR1kcyxaS9Ml98q120U0PgRPocPJWiw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     dependencies:
