@@ -36,11 +36,11 @@ dependencies:
     specifier: ^2.8.1
     version: 2.8.1(typescript@5.4.2)
   '@tanstack/react-query':
-    specifier: ^5.28.2
-    version: 5.28.2(react@18.2.0)
+    specifier: ^5.28.4
+    version: 5.28.4(react@18.2.0)
   '@tanstack/react-query-devtools':
     specifier: ^5.27.8
-    version: 5.27.8(@tanstack/react-query@5.28.2)(react@18.2.0)
+    version: 5.27.8(@tanstack/react-query@5.28.4)(react@18.2.0)
   '@vercel/remix':
     specifier: ^2.8.1
     version: 2.8.1(@remix-run/dev@2.8.1)(@remix-run/node@2.8.1)(@remix-run/server-runtime@2.8.1)(react-dom@18.2.0)(react@18.2.0)
@@ -2929,31 +2929,31 @@ packages:
       - supports-color
     dev: true
 
-  /@tanstack/query-core@5.28.2:
-    resolution: {integrity: sha512-IvRjNUzoJ0Hn5OSpFkPtMY00zEm+EauCnSKOx/PJPOpME6ucM5hSisFdnIN9oU3WDw5lv6OFWDSpG0rM6lF9rw==}
+  /@tanstack/query-core@5.28.4:
+    resolution: {integrity: sha512-uQZqOFqLWUvXNIQZ63XdKzg22NtHzgCBUfDmjDHi3BoF+nUYeBNvMi/xFPtFrMhqRzG2Ir4mYaGsWZzmiEjXpA==}
     dev: false
 
   /@tanstack/query-devtools@5.27.8:
     resolution: {integrity: sha512-K94gnqvEe6TsDvi8eZYP2JrnQJOIymhVXRR+Xa0xcsryNqG+PeMIDmQQqjwIqbDq36qyUlPAyT6LxXVvVv1Nyw==}
     dev: false
 
-  /@tanstack/react-query-devtools@5.27.8(@tanstack/react-query@5.28.2)(react@18.2.0):
+  /@tanstack/react-query-devtools@5.27.8(@tanstack/react-query@5.28.4)(react@18.2.0):
     resolution: {integrity: sha512-nWttSF5qhRxyIYh0D9ybZHgAWCOdsBNZf2s0EskYpAxDDrF3lgf/xTzPPzxoX7Z14bxKruVUEpwjQWZg3f/Z7g==}
     peerDependencies:
       '@tanstack/react-query': ^5.27.5
       react: ^18.0.0
     dependencies:
       '@tanstack/query-devtools': 5.27.8
-      '@tanstack/react-query': 5.28.2(react@18.2.0)
+      '@tanstack/react-query': 5.28.4(react@18.2.0)
       react: 18.2.0
     dev: false
 
-  /@tanstack/react-query@5.28.2(react@18.2.0):
-    resolution: {integrity: sha512-t3th5v5bzyeiw+fzwKwbGVT3ux2qW4wDJRrLy4YLok0qrrEQUYcZ3xsC7dlxkPbFInrIGJ8qLsm1A2sbyy2XZA==}
+  /@tanstack/react-query@5.28.4(react@18.2.0):
+    resolution: {integrity: sha512-BErcoB/QQG6YwLSUKnaGxF+lSc270RH2w3kMBpG0i4YzDCsFs2pdxPX1WVknQvFk9bNgukMb158hc2Zb4SdwSA==}
     peerDependencies:
       react: ^18.0.0
     dependencies:
-      '@tanstack/query-core': 5.28.2
+      '@tanstack/query-core': 5.28.4
       react: 18.2.0
     dev: false
 
